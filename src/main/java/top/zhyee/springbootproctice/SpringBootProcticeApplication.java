@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * 这是一个启动类
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"top.zhyee.springbootproctice"})
 public class SpringBootProcticeApplication {
 
     public static void main(String[] args) {

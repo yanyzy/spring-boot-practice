@@ -9,10 +9,11 @@ import java.util.Date;
 
 /**
  * 过滤器
+ *
  * @author zhyee
  * @date 2018/7/9 下午4:12
  */
-//@Component
+@Component
 public class TimeFilter implements Filter {
 
     @Override

@@ -15,10 +15,10 @@ import java.util.Date;
 @Component
 public class TimeAspect {
     @Around("execution(* top.zhyee.springbootproctice.controller.HelloController.*(..))")
-    public Object handlerControllerMethod(ProceedingJoinPoint pjp) throws Throwable{
+    public Object handlerControllerMethod(ProceedingJoinPoint pjp) throws Throwable {
         System.out.println("time aspcet start");
         Object[] args = pjp.getArgs();
-        for(Object arg : args){
+        for (Object arg : args) {
             System.out.println("arg is " + arg);
         }
         long start = new Date().getTime();

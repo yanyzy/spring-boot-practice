@@ -18,13 +18,13 @@ import java.util.List;
  */
 @Configuration
 public class WebConfig extends WebMvcConfigurerAdapter {
-//    @Autowired
-//    private TimeInterceptor timeInterceptor;
-//
-//    @Override
-//    public void addInterceptors(InterceptorRegistry registry) {
-//        registry.addInterceptor(timeInterceptor).addPathPatterns("/hello");
-//    }
+    @Autowired
+    private TimeInterceptor timeInterceptor;
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(timeInterceptor).addPathPatterns("/hello");
+    }
 
     @Bean
     public FilterRegistrationBean timeFilter(){
